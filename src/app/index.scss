@@ -73,7 +73,6 @@ section.jumbotron {
   padding: 1px 30px;
   background-color: #5aadbb;
   text-align: center;
-
   color: white;
 
   h1 {
@@ -115,7 +114,6 @@ section.jumbotron {
 }
 
 .quiz__title {
-  justify-content: cener;
   padding: .4rem;
   font-size: 1.2rem;
   color: #1C6714;
@@ -153,4 +151,20 @@ section.jumbotron {
 
 .allmd {
   background-color: #5BA0C0;
+}
+
+.button-split {
+  display: flex;
+  flex-direction: row
+}
+
+.button__text {
+  text-align: left;
+  padding-left: 0.3rem;
+}
+
+.button__letter {
+  text-align: justify-all;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
