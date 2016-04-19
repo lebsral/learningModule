@@ -1,27 +1,7 @@
 <div layout="vertical" layout-fill>
 
   <md-content>
-    <!--
-    <header>
-      <acme-navbar creation-date="main.creationDate"></acme-navbar>
-    </header>
--->
 
-<!--
-    <section class="jumbotron">
-      <h1>Learning Module Example</h1>
--->
-      <!--
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p>
--->
-<!--    </section>-->
     <div class="outer">
       <nav class="nav left"></nav>
       <div class="quiz">
@@ -38,55 +18,62 @@
 
             <button class="possibleanswers__button">
               <div class="button-split">
-                <span class="button__letter">A</span> <div class="button__text">I cannot hear the voices. They are not real.</div>
+                <span class="button__letter">A</span>
+                <div class="button__text">I cannot hear the voices. They are not real.</div>
               </div>
             </button>
 
 
             <button class="possibleanswers__button">
               <div class="button-split">
-              <span class="button__letter">B</span> <div class="button__text">I can see how troubling the voices are to you. I will keep you safe.</div>
-                </div>
+                <span class="button__letter">B</span>
+                <div class="button__text">I can see how troubling the voices are to you. I will keep you safe.</div>
+              </div>
             </button>
 
 
             <button class="possibleanswers__button">
               <div class="button-split">
-              <span class="button__letter">C</span> <div class="button__text">Do not listen to the voices. Tehy are not powerful enough to cause you harm.</div>
+                <span class="button__letter">C</span>
+                <div class="button__text">Do not listen to the voices. Tehy are not powerful enough to cause you harm.</div>
               </div>
             </button>
 
 
-            <button class="possibleanswers__button">              <div class="button-split">
-              <span class="button__letter">D</span> <div class="button__text"> Why do you think you are hearing voices?</div>
+            <button class="possibleanswers__button">
+              <div class="button-split">
+                <span class="button__letter">D</span>
+                <div class="button__text"> Why do you think you are hearing voices?</div>
               </div>
             </button>
 
           </div>
         </div>
-        <div>
-          put sound here
-        </div>
+
+        <videogular vg-theme="main.config.theme.url" class="videogular-container audio">
+          <vg-media vg-src="main.config.sources" vg-type="audio"></vg-media>
+
+          <vg-controls>
+            <vg-play-pause-button></vg-play-pause-button>
+            <vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
+            <vg-scrub-bar>
+              <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            </vg-scrub-bar>
+            <vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
+            <vg-volume>
+              <vg-mute-button></vg-mute-button>
+            </vg-volume>
+          </vg-controls>
+        </videogular>
+      </div>
+      <div>
+
       </div>
 
       <nav class="nav right"></nav>
     </div>
 
 
-    <!--
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-        <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-        </md-card-content>
-        <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
-        </div>
-      </md-card>
-    </div>
--->
 
   </md-content>
 

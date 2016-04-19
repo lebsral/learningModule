@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -18,7 +18,7 @@
 
     function activate() {
       getWebDevTec();
-      $timeout(function() {
+      $timeout(function () {
         vm.classAnimation = 'rubberBand';
       }, 4000);
     }
@@ -31,19 +31,26 @@
     function getWebDevTec() {
       vm.awesomeThings = webDevTec.getTec();
 
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
+      angular.forEach(vm.awesomeThings, function (awesomeThing) {
         awesomeThing.rank = Math.random();
       });
     }
 
     vm.config = {
-				sources: [
-              {src: $sce.trustAsResourceUrl("http://static.videogular.com/assets/audios/videogular.mp3"), type: "audio/mpeg"},
-              {src: $sce.trustAsResourceUrl("http://static.videogular.com/assets/audios/videogular.ogg"), type: "audio/ogg"}
+      sources: [
+        {
+          src: $sce.trustAsResourceUrl("http://static.videogular.com/assets/audios/videogular.mp3"),
+          type: "audio/mpeg"
+        },
+        {
+          src: $sce.trustAsResourceUrl("http://static.videogular.com/assets/audios/videogular.ogg"),
+          type: "audio/ogg"
+        }
           ],
-				theme: {
-          url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
-				}
-			};
+      autoPlay: true,
+      theme: {
+        url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
+      }
+    };
   }
 })();
