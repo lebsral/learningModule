@@ -39,15 +39,15 @@
     vm.config = {
       sources: [
         {
-          src: $sce.trustAsResourceUrl("assets/sounds/theclientappears.aiff"),
+          src: $sce.trustAsResourceUrl("https://github.com/lebsral/learningModule/blob/gh-pages/src/assets/sound/theclientappears.aiff?raw=true"),
           type: "audio/aiff"
         },
         {
-          src: $sce.trustAsResourceUrl("assets/sounds/theclientappears.ogg"),
+          src: $sce.trustAsResourceUrl("https://github.com/lebsral/learningModule/blob/gh-pages/src/assets/sound/theclientappears.ogg?raw=true"),
           type: "audio/ogg"
         },
        {
-          src: $sce.trustAsResourceUrl("assets/sounds/theclientappears.wav"),
+          src: $sce.trustAsResourceUrl("https://github.com/lebsral/learningModule/blob/gh-pages/src/assets/sound/theclientappears.wav?raw=true"),
           type: "audio/wav"
         }
           ],
