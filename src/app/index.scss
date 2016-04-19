@@ -46,6 +46,11 @@
 
 html {
   font-family: 'Roboto Slab', serif;
+  background-color: #5BA0C0;
+}
+
+body {
+  background-color: #5BA0C0;
 }
 
 [layout=row] {
@@ -100,17 +105,52 @@ section.jumbotron {
 .quiz {
   display: flex;
   flex-direction: column;
-    width: 60%;
-  justify-content: cener;
-
+  width: 60%;
 }
 
 .quiz__QandChoice {
   display: flex;
-  flex-direction: column;
-  justify-content: cener;
+  flex-direction: row;
+  margin: 2rem;
 }
 
 .quiz__title {
   justify-content: cener;
+  padding: .4rem;
+  font-size: 1.2rem;
+  color: #1C6714;
+}
+
+.outer {
+  display: flex;
+  flex-flow: row;
+  min-height: 50px;
+
+}
+
+.left {
+  flex: 1;
+  background-color: #5BA0C0;
+}
+
+.right {
+  flex:2;
+  background-color: #5BA0C0;
+}
+
+.possibleanswers__button {
+  background-color: #989898;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0.4rem;
+}
+
+.quiz__question {
+  margin: 1rem;
+  color: #940A0F;
+}
+
+.allmd {
+  background-color: #5BA0C0;
 }
