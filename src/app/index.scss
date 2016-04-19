@@ -96,3 +96,21 @@ section.jumbotron {
  */
 // injector
 // endinjector
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+    width: 60%;
+  justify-content: cener;
+
+}
+
+.quiz__QandChoice {
+  display: flex;
+  flex-direction: column;
+  justify-content: cener;
+}
+
+.quiz__title {
+  justify-content: cener;
+}
